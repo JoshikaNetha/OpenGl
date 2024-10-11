@@ -14,6 +14,7 @@ int main(){
     }
     glfwMakeContextCurrent(window);
 
+//Load Glad to configure openGl
     gladLoadGL();
 
     glViewport(0,0,500,500);
