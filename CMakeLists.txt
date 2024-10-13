@@ -11,7 +11,8 @@ add_executable(openGlWindow
 # src/mainVersion_1.cpp
 # src/mainTwoTriangle.cpp
 # src/mainTexture.cpp
-src/mainWindow.cpp
+# src/mainWindow.cpp
+src/mainTriangle.cpp
 src/shaders/mainShader.h
 src/stb_image.h
 glad/src/glad.c)
