@@ -4,6 +4,7 @@ project(openGlWindow VERSION 1.0)
 include_directories(${CMAKE_SOURCE_DIR}/src)
 include_directories(${CMAKE_SOURCE_DIR}/src/shaders)
 include_directories(${CMAKE_SOURCE_DIR}/glad/include)
+include_directories(${CMAKE_SOURCE_DIR}/glm/glm)
 
 
 add_executable(openGlWindow
@@ -14,16 +15,21 @@ add_executable(openGlWindow
 # src/mainWindow.cpp
 # src/mainTriangle.cpp
 # src/shaders/mainShader.h
-# src/stb_image.h
-src/organizer.cpp
+src/stb_image.h
+# src/organizer.cpp
+# src/main_Texture.cpp
+src/mainTransformation.cpp
 src/shaders/ShaderClass.h
 src/shaders/VAO.h
 src/shaders/EBO.h
 src/shaders/VBO.h
+src/shaders/Texture.h
 src/shaders/ShaderClass.cpp
 src/shaders/VAO.cpp
 src/shaders/EBO.cpp
 src/shaders/VBO.cpp
+src/shaders/stb.cpp
+src/shaders/Texture.cpp
 glad/src/glad.c)
 
 # Include GLM and GLFW headers
