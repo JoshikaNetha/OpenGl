@@ -15,21 +15,24 @@ add_executable(openGlWindow
 # src/mainWindow.cpp
 # src/mainTriangle.cpp
 # src/shaders/mainShader.h
-src/stb_image.h
 # src/organizer.cpp
 # src/main_Texture.cpp
-src/mainTransformation.cpp
+# src/mainTransformation.cpp
+src/mainCamera.cpp
 src/shaders/ShaderClass.h
 src/shaders/VAO.h
 src/shaders/EBO.h
 src/shaders/VBO.h
 src/shaders/Texture.h
+src/shaders/Camera.h
 src/shaders/ShaderClass.cpp
 src/shaders/VAO.cpp
 src/shaders/EBO.cpp
 src/shaders/VBO.cpp
 src/shaders/stb.cpp
 src/shaders/Texture.cpp
+src/shaders/Camera.cpp
+src/stb_image.h
 glad/src/glad.c)
 
 # Include GLM and GLFW headers
