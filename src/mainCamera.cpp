@@ -12,7 +12,7 @@
 #include<glm/gtc/type_ptr.hpp>
 #include <Camera.h>
 
-const unsigned int width = 800;
+const unsigned int width = 1200;
 const unsigned int height = 800;
 
 
@@ -153,7 +153,7 @@ int main()
 
 
 
-	glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
+	glm::vec4 lightColor = glm::vec4(1.0f, 0.5f, 0.0f, 1.0f);
 	glm::vec3 lightPos = glm::vec3(0.5f, 0.5f, 0.5f);
 	glm::mat4 lightModel = glm::mat4(1.0f);
 	lightModel = glm::translate(lightModel, lightPos);
