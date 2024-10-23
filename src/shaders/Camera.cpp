@@ -75,37 +75,41 @@ void Camera::Inputs(GLFWwindow* window)
 
     // Top View (I)
     if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS)
-    {
-        Orientation = glm::vec3(0.0f, -1.0f, 0.0f); // Look down
+    {   
+         Orientation = glm::rotate(Orientation, glm::radians(45.0f), Up);
     }
 
     // Left View (J)
     if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS)
     {
-        Orientation = glm::vec3(-1.0f, 0.0f, -1.0f); // Look left
+        std::cout << "J key pressed" << std::endl;
+        Orientation = glm::vec3(-1.0f, 0.0f, 8.0f); // Look left (normalized)
     }
 
     // Right View (L)
     if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS)
     {
-        Orientation = glm::vec3(1.0f, 0.0f, -1.0f); // Look right
+        std::cout << "L key pressed" << std::endl;
+        Orientation = glm::normalize(glm::cross(Orientation, -Up)); // Look right
     }
 
     // Back View (K)
     if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS)
     {
-        Orientation = glm::vec3(0.0f, 0.0f, -1.0f); // Look backwards
+        std::cout << "K key pressed" << std::endl;
+        Orientation = glm::vec3(0.0f, 0.0f, 2.0f); // Look backwards
     }
 
     // Downside View (M)
     if (glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
     {
-        Orientation = glm::vec3(0.0f, 1.0f, -1.0f); // Look upwards
+        std::cout << "M key pressed" << std::endl;
+        Orientation = glm::vec3(0.0f, 1.0f, 2.0f); // Look upwards
     }
 
     // Reset (R)
     if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS)
-    {
+    {   
         Position = initialPosition; // Reset position
         Orientation = initialOrientation; // Reset orientation
     }
