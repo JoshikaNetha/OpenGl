@@ -18,13 +18,15 @@ add_executable(openGlWindow
 # src/organizer.cpp
 # src/main_Texture.cpp
 # src/mainTransformation.cpp
-src/mainCamera.cpp
+# src/mainCamera.cpp
+src/mainMesh.cpp
 src/shaders/ShaderClass.h
 src/shaders/VAO.h
 src/shaders/EBO.h
 src/shaders/VBO.h
 src/shaders/Texture.h
 src/shaders/Camera.h
+src/shaders/Mesh.h
 src/shaders/ShaderClass.cpp
 src/shaders/VAO.cpp
 src/shaders/EBO.cpp
@@ -32,6 +34,7 @@ src/shaders/VBO.cpp
 src/shaders/stb.cpp
 src/shaders/Texture.cpp
 src/shaders/Camera.cpp
+src/shaders/Mesh.cpp
 src/stb_image.h
 glad/src/glad.c)
 
